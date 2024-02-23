@@ -1,0 +1,43 @@
+package curso_programacao;
+
+public class User {
+	private String _name;
+	private String membership;
+	private int age;
+	
+	public String toString() {
+		return get_name() + ", " + get_age();
+	}
+	
+	private int get_age() {
+		return this.age;
+	}
+
+	public User(String name, int age) {
+		_name = name;
+		this.age = age;
+	}
+
+	void set_name(String name) {
+		_name = name;
+	}
+	
+	String get_name() {
+		return _name;
+	}
+	
+	void set_membership(String membership) {
+		this.membership = membership;
+	}
+	
+	void set_membership(Membership membership) {
+		this.membership = membership.name();
+	}
+
+	public enum Membership {
+		Bronze, Silver, Gold;
+	}
+	String get_membership() {
+		return this.membership;
+	}
+}

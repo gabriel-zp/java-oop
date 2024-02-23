@@ -1,0 +1,27 @@
+package curso_programacao;
+
+public class User {
+	private int account_number;
+	private String holder;
+	private float initial_deposit;
+	
+	public String getHolder() {
+		return holder;
+	}
+	public void setHolder(String holder) {
+		this.holder = holder;
+	}
+	public int getAccount_number() {
+		return account_number;
+	}
+	public void setAccount_number(int account_number) {
+		this.account_number = account_number;
+	}
+	
+	public String toString() {
+		return
+	}
+	
+	
+	
+}

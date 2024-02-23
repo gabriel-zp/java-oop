@@ -1,0 +1,22 @@
+package curso_programacao;
+
+public class User {
+	private String _name;
+	String membership;
+	
+	void set_name(String name) {
+		_name = name;
+	}
+	
+	String get_name() {
+		return _name;
+	}
+	
+	void set_membership(String membership) {
+		this.membership = membership;
+	}
+	
+	String get_membership() {
+		return this.membership;
+	}
+}

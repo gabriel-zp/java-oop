@@ -1,0 +1,19 @@
+package curso_programacao;
+
+public class User {
+	String name;
+	String membership;
+	int	age; 
+	
+	void return_name(String name,int age) {
+		this.name = name;
+		for(int i=0;i<age;i++) {
+			System.out.println(i);
+		}
+		this.age = age;
+	}
+	
+	void get_name() {
+		System.out.println(this.name);
+	}
+}

@@ -1,0 +1,14 @@
+package curso_programacao;
+
+public class Main {
+
+	public static void main(String[] args) {
+		User u = new User();
+		u.age = 15;
+		u.name = "Gabrielly";
+		for(int i=0;i<u.age;i++) {
+			System.out.println(i);
+		}
+	}
+
+}

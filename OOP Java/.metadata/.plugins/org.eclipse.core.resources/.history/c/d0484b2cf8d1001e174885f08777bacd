@@ -1,0 +1,41 @@
+package curso_programacao;
+
+public class User {
+	private int account_number;
+	private String holder;
+	private float initial_deposit;
+	
+	public User(int account_number, String holder, float initial_deposit) {
+		this.account_number = account_number;
+		this.holder = holder;
+		this.initial_deposit = initial_deposit;
+	}
+	
+	public String getHolder() {
+		return holder;
+	}
+	public void setHolder(String holder) {
+		this.holder = holder;
+	}
+	public int getAccount_number() {
+		return account_number;
+	}
+	public void setAccount_number(int account_number) {
+		this.account_number = account_number;
+	}
+	
+	public void setInitial_deposit(int initial_deposit) {
+		this.initial_deposit = initial_deposit;
+	}
+	
+	public float getInitial_deposit() {
+		return this.initial_deposit;
+	}
+	
+	public String toString() {
+		return "Account " + this.getAccount_number() + ", Holder: " + this.getHolder() + ", Balance: " + getInitial_deposit();
+	}
+	
+	
+	
+}
